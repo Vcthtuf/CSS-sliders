@@ -1,0 +1,151 @@
+body {
+    display:flex;
+    flex-direction:column;
+    max-width:1200px;
+    width:100%;
+    min-height:100vh;
+    font-size:16px;
+    margin:0 auto;
+    padding:0;
+    background-color:#faf8f5;
+    box-sizing:border-box
+}
+
+
+h1,h2,h3{
+    text-align:center
+}
+.header{
+    background-color:#ccc
+}
+.header .logo{
+    display:block;
+    text-align:center;
+    font-size:2rem;
+    min-height:5rem;
+    line-height:5rem;
+    cursor:pointer;
+    text-decoration:none;
+    color:#000
+}
+.header span{
+    color:#ff6a30
+}
+
+.wrapper{
+    width:80%;
+    height: 350px;
+    margin: 2rem auto;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+
+/* animation */
+
+@keyframes slider {
+    0% {left: 100%;}
+    2% {left: 0;}
+    20% {left: 0;}
+    22% {left: -100%;}
+    100% {left: -100%;}
+}
+
+
+.slide {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: 23rem;
+    animation: 10s slider infinite ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .slide:nth-child(1), .dots .dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.wrapper .slide:nth-child(2), .dots .dot:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.wrapper .slide:nth-child(3), .dots .dot:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.wrapper .slide:nth-child(4), .dots .dot:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.wrapper .slide:nth-child(5), .dots .dot:nth-child(5) {
+    animation-delay: 8s;
+}
+
+@keyframes dots_animate {
+    0% {background-color: #fff;}
+    20% {background-color: #000;}
+}
+
+.dots .dot {
+    background-color: #000;
+    animation: 10s dots_animate infinite;
+    animation-timing-function: steps(1);
+}
+
+.dots {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+
+.footer{
+    padding:1rem 5%;
+    text-align:center;
+    background-color:#ccc;
+    flex-grow:0
+}
+
+.footer_menu{
+    display:flex;
+    justify-content:space-evenly;
+    margin:0 auto
+}
+
+.footer_menu a{
+    display:block;
+    padding:1rem 0
+}
+footer li {
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: darkred
+}
+
+footer a:hover {
+    color: darkblue;
+}
+p.text{
+    text-indent:20px;
+}
+
