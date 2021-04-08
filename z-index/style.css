@@ -46,9 +46,9 @@ h1,h2,h3{
 
 @keyframes slider {
     0% {z-index: 0;}
-    20% {z-index: -1;}
-    40% {z-index: -1;}
-    60% {z-index: -1;}
+    20% {z-index: 0;}
+    40% {z-index: 0;}
+    60% {z-index: 0;}
     80% {z-index: -1;}
 }
 
@@ -96,7 +96,7 @@ h1,h2,h3{
 .dots .dot {
     background-color: #000;
     animation: 10s dots_animate infinite;
-    /* animation-timing-function: steps(1); */
+    animation-timing-function: steps(1);
 }
 
 .dots {
@@ -104,7 +104,7 @@ h1,h2,h3{
     display: flex;
     justify-content: space-between;
     width: 20%;
-    bottom: 15%;
+    top: 25rem;
     left: 50%;
     transform: translateX(-50%);
 }

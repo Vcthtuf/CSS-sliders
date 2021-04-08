@@ -103,7 +103,7 @@ h1,h2,h3{
     display: flex;
     justify-content: space-between;
     width: 20%;
-    bottom: 15%;
+    top: 25rem;
     left: 50%;
     transform: translateX(-50%);
 }
