@@ -124,9 +124,23 @@ h1,h2,h3{
     flex-grow:0
 }
 
+.radio {
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    opacity: 0;
+}
+
 .footer_menu{
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
+    width: 60%;
     margin:0 auto
 }
 

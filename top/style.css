@@ -125,7 +125,8 @@ h1,h2,h3{
 
 .footer_menu{
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
+    width: 60%;
     margin:0 auto
 }
 
