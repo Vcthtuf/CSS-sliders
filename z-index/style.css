@@ -45,11 +45,11 @@ h1,h2,h3{
 /* animation */
 
 @keyframes slider {
-    0% {z-index: 0;}
+    0% {z-index: 1;}
     20% {z-index: 0;}
     40% {z-index: 0;}
     60% {z-index: 0;}
-    80% {z-index: -1;}
+    80% {z-index: 0;}
 }
 
 
@@ -91,6 +91,9 @@ h1,h2,h3{
 @keyframes dots_animate {
     0% {background-color: #fff;}
     20% {background-color: #000;}
+    40% {background-color: #000;}
+    60% {background-color: #000;}
+    80% {background-color: #000;}
 }
 
 .dots .dot {
@@ -122,19 +125,6 @@ h1,h2,h3{
     text-align:center;
     background-color:#ccc;
     flex-grow:0
-}
-
-.radio {
-    width: 30px;
-    height: 30px;
-    border: 1px solid red;
-    border-radius: 50%;
-    background-color: white;
-    cursor: pointer;
-}
-
-input[type="radio"] {
-    opacity: 0;
 }
 
 .footer_menu{
